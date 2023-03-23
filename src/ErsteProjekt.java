@@ -3,13 +3,20 @@ public class ErsteProjekt {
         int a; // Deklaration der Variable a
         int b;
 
-        a = 10; // Initialisierung (erste Wertzuweisung)
+        a = 9; // Initialisierung (erste Wertzuweisung)
         b = 15;
 
-        int c = 17; // Deklaration und Initialisierung in einem
+        // Euklid einfügen!
+        while (a != b) {
 
-        c = a + b;  // jetzt rechnen wir mal ...
+            if (a > b) {
+                a = a - b;
+            }
+            else {
+                b = b - a;
+            }
+        }
 
-        System.out.println( "c = " + c );
+        System.out.println( "a = " + a );
     }
 }
